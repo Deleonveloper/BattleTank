@@ -24,6 +24,4 @@ public:
 
 private:
 	UProjectileMovementComponent* ProjectileMovement = nullptr;
-	
-	
 };

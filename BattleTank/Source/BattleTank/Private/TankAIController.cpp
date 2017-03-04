@@ -10,7 +10,6 @@ void ATankAIController::BeginPlay()
 	Super::BeginPlay();
 }
 
-
 // Called every frame
 void ATankAIController::Tick(float DeltaTime)
 {
@@ -22,11 +21,10 @@ void ATankAIController::Tick(float DeltaTime)
 	if (PlayerTank)
 	{
 		// TODO Move towards the player
-
+		
 		// Aim towards the player
 		ControlledTank->AimAt(PlayerTank->GetActorLocation());
 
-		// TODO Fire if ready
-		ControlledTank->Fire();
+		ControlledTank->Fire(); // TODO limit firing rate
 	}
 }
