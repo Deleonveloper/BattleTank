@@ -72,7 +72,7 @@ private:
 
 	FVector AimDirection = FVector(0,0,0);
 
-	UPROPERTY(EditDefaultsOnly, Category = "Firing")
+	UPROPERTY(EditAnywhere, Category = "Firing")
 	int32 RoundsLeft = 3;
 
 };
